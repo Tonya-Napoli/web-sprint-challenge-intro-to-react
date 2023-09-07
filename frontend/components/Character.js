@@ -13,15 +13,18 @@ import axios from 'axios'
     };
   
     return (
-      <div>
-        <button onClick={togglePlanet}>
-          {person.name}
-        </button>
-        {showPlanet && (
-          <p>Planet: {planet.name}</p>
-        )}
-      </div>
-    );
-  }
+    
+      <div className="character-card">
+      <h3 className="character-name" onClick={togglePlanet}>
+        {person.name}
+      </h3>
+      {showPlanet && (
+        <p>
+          Planet: <span className='character-planet'>{planet.name}</span>
+        </p>
+      )}
+    </div>
+  );
+}
   
   export default Character;

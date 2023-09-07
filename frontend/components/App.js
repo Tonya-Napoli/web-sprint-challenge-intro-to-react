@@ -46,7 +46,7 @@ function App() {
         const personHomeworld = planets.find(planet => planet.id === person.homeworld)
         return (
     
-      <Character key={person.id} person={person} planet={personHomeworld} />
+      <Character key={person.id} person={person} planet={personHomeworld} className="character-card" />
         );
       })}
     </div>
