@@ -19,12 +19,12 @@ import axios from 'axios'
         {person.name}
       </h3>
       {showPlanet && (
-        <p>
-          Planet: <span className='character-planet'>{planet.name}</span>
+        <p className="character-planet">
+          Planet: <span> {planet.name}</span>
         </p>
       )}
     </div>
-  );
-}
-  
+    )
+      }
+      
   export default Character;
