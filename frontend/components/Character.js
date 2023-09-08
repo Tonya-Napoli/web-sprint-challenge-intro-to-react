@@ -14,13 +14,11 @@ import axios from 'axios'
   
     return (
     
-      <div className="character-card">
-      <h3 className="character-name" onClick={togglePlanet}>
-        {person.name}
-      </h3>
+      <div className="character-card" onClick={(togglePlanet)}>
+      <h3 className="character-name" > {person.name } </h3>
       {showPlanet && (
-        <p className="character-planet">
-          Planet: <span> {planet.name}</span>
+        <p>
+          Planet: <span className="character-planet"> {planet.name}</span>
         </p>
       )}
     </div>
